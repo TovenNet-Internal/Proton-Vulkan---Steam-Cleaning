@@ -7,7 +7,7 @@ if [[ ($continue == 'Y' || $continue == 'y')]]; then
     echo -e "\n"
     read -p "Last chance.. Are you sure? [y]/n: " sure
     
-    if [[ (sure == 'Y') || $sure == 'y') ]]; then
+    if [[ ($sure == 'Y' || $sure == 'y') ]]; then
             echo "**Lets Repair Some Mesa Mess!**"
             echo "Stage 1 of 6 - Roll back beta drivers"
             sudo add-apt-repository ppa:graphics-drivers/ppa --remove
